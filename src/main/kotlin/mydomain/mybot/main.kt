@@ -5,7 +5,7 @@ import java.io.File
 
 
 suspend fun main() {
-    val token = File("token.txt").readText()
+    val token = File("token.txt").readText().trim()
 
     bot(token) {
         messageCreated {
